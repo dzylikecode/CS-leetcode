@@ -38,15 +38,6 @@ var romanToInt = function (s) {
    * @param {Array} arr
    */
   function sumAll(arr) {
-    // const [x, y, ...rest] = arr;
-    // if (y == 0) {
-    //   return x;
-    // }
-    // if (x < y) {
-    //   return -x + sumAll([y, ...rest]);
-    // } else {
-    //   return x + sumAll([y, ...rest]);
-    // }
     const bound = arr.length - 1;
     let sum = 0;
     for (let i = 0; i < bound; i++) {

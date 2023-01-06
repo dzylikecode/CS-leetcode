@@ -15,5 +15,4 @@ prefixSign :: (Ord a, Num a) => [a] -> [a]
 prefixSign (x : y : rest)
   | x < y = -x : prefixSign (y : rest)
   | otherwise = x : prefixSign (y : rest)
-prefixSign [] = []
-prefixSign [x] = [x]
+prefixSign x = x
