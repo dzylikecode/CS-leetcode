@@ -1,5 +1,3 @@
-type OrdNum a b = (Num a, Ord b)
-
 getElem :: (a, b) -> a
 getElem = fst
 
