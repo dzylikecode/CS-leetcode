@@ -15,29 +15,36 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
     typedef long long Num;
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+    {
         return write(read(l1) + read(l2));
     }
-    Num read(ListNode* l) {
+    Num read(ListNode *l)
+    {
         Num res = 0;
         Num i = 0;
-        while (l != nullptr) {
+        while (l != nullptr)
+        {
             res += l->val * pow(10, i);
             l = l->next;
             i++;
         }
         return res;
     }
-    ListNode* write(Num num) {
-        ListNode* res = new ListNode();
-        ListNode* cur = res;
-        while (num != 0) {
+    ListNode *write(Num num)
+    {
+        ListNode *res = new ListNode();
+        ListNode *cur = res;
+        while (num != 0)
+        {
             cur->val = num % 10;
             num /= 10;
-            if (num != 0) {
+            if (num != 0)
+            {
                 cur->next = new ListNode();
                 cur = cur->next;
             }
@@ -52,4 +59,4 @@ public:
  * SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:37:17
  *
  * 容易 overflow
-*/
+ */
