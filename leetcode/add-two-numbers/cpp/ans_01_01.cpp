@@ -58,5 +58,5 @@ public:
  * Line 28: Char 17: runtime error: 1e+30 is outside the range of representable values of type 'long long' (solution.cpp)
  * SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:37:17
  *
- * 容易 overflow
+ * 容易 overflow, 数字太大了
  */
