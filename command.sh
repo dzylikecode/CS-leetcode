@@ -95,3 +95,8 @@ function help_docs(){
 }
 
 alias dz_help="help_docs"
+
+############################################################################
+# 
+
+alias cs_clean="python3 utils/clean.py"
